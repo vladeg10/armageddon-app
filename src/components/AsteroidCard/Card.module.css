@@ -1,0 +1,34 @@
+.card{
+    position: relative;
+    max-width: 920px;
+    min-height: 200px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.regularCard{
+    position: relative;
+    max-width: 920px;
+    min-width: 800px;
+    height: 200px;
+    border-radius: 10px;
+    left: 0;
+    top: 0;
+
+    background: linear-gradient(90deg, #CFF37D 0%, #7DE88C 100%);
+}
+
+.cardRed{
+    position: relative;
+    max-width: 920px;
+    height: 200px;
+    min-width: 800px;
+    border-radius: 10px;
+    left: 0;
+    top: 0;
+
+
+    background: linear-gradient(90deg, #fa8989 0%, #fb0202 100%);
+}

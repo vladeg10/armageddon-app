@@ -1,0 +1,28 @@
+.actionGrade{
+    white-space: pre-line ;
+    position: absolute;
+    left: 83%;
+    top: 35%;
+    margin-bottom: 100px;
+    text-align: center;
+
+}
+
+.action{
+    position: absolute;
+    left: 77%;
+    top: 60%;
+    background: #2f71bc;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 14px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+}
+
+.actionText{
+    position: relative;
+    color: white;
+}

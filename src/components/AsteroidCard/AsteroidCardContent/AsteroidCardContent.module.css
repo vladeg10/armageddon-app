@@ -1,0 +1,29 @@
+.contentName{
+    position: absolute;
+    font-size: 16pt;
+    font-weight: bold;
+    text-decoration: underline;
+    left: 30%;
+    top: 20%;
+
+}
+
+
+.contentWrapper{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+}
+
+
+.contentDate{
+    position: relative;
+}
+
+.contentDistance{
+    position: relative;
+}
+
+.contentSize{
+    position: relative;
+}
