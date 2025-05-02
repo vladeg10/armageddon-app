@@ -3,7 +3,6 @@ export const getUserKey = ()=>{
         return process.env.REACT_APP_API_KEY;
     }
 
-    const test = process.env.REACT_APP_FOO;
 
     let userKey = '';
 
