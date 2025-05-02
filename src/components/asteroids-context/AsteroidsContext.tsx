@@ -13,6 +13,18 @@ export const AsteroidsContextProvider: FC<AsteroidsContextProviderProps> = ({
 
     const [distanceMode, setDistanceMode] = useState(false)
 
+    const [destroyment, setDestroyment] = useState([])
+
+    const addAsteroid = (asteroid)=> {
+        setDestroyment([...destroyment.filter(item=>item.id !== asteroid.id), asteroid])
+    }
+
+    const deleteAsteroid = (asteroid)=> {
+        setDestroyment([...destroyment.filter(item=>item.id !== asteroid.id)])
+    }
+
+
+
     return (
         <AsteroidsContext.Provider
             value={{
@@ -20,6 +32,9 @@ export const AsteroidsContextProvider: FC<AsteroidsContextProviderProps> = ({
                 setOnlyDangerous,
                 distanceMode,
                 setDistanceMode,
+                addAsteroid,
+                deleteAsteroid,
+                destroyment
             }}
         >
             {children}

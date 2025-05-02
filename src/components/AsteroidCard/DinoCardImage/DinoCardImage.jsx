@@ -1,7 +1,7 @@
-import styles from "./AsteroidCardImage.module.css"
+import styles from "./DinoCardImage.module.css"
 
-export const AsteroidCardImage = () =>{
- return(<svg className={styles.asteroidImage} width="56" height="48" viewBox="0 0 56 48" preserveAspectRatio="none">
+export const DinoCardImage = () =>{
+ return(<svg className={styles.dinoImage} width="56" height="48" viewBox="0 0 56 48" preserveAspectRatio="none">
          <path
              d="M44.8282 7.09339C45.0758 7.09339 45.3177 7.01999 45.5235 6.88247C45.7294 6.74494 45.8898 6.54948 45.9845 6.32078C46.0792 6.09209 46.104 5.84044 46.0557 5.59767C46.0074 5.35489 45.8882 5.13188 45.7132 4.95685C45.5382 4.78181 45.3152 4.66261 45.0724 4.61432C44.8296 4.56603 44.578 4.59081 44.3493 4.68554C44.1206 4.78027 43.9251 4.94068 43.7876 5.1465C43.6501 5.35232 43.5767 5.5943 43.5767 5.84183C43.5771 6.17362 43.7091 6.49169 43.9437 6.72631C44.1784 6.96092 44.4964 7.09293 44.8282 7.09339Z"
              fill="black"/>

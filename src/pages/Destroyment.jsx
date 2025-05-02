@@ -1,17 +1,17 @@
 import {Header} from "../components/header/Header";
 import {useContext} from "react";
 import {AsteroidsContext} from "../components/asteroids-context/AsteroidsContext";
+import {Asteroid} from "./Asteroid";
+import {AsteroidCard} from "../components/AsteroidCard/AsteroidCard";
 
 
 export const Destroyment = () =>{
 
 
-    const contextValue = useContext(AsteroidsContext)
-
-    console.log('Destroyment page')
+    const {destroyment} = useContext(AsteroidsContext)
 
     return <div>
         <Header/>
-        Destroyment page
+        {destroyment.map(item=><AsteroidCard key={item.id} {...item}/>)}
     </div>
 }

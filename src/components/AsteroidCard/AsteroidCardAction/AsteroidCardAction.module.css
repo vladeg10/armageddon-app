@@ -9,16 +9,23 @@
 }
 
 .action{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 10px;
+    white-space: pre-line ;
+
     position: absolute;
-    left: 77%;
-    top: 60%;
+    width: 17%;
+    height: 24%;
+    left: 79%;
+    top: 58%;
     background: #2f71bc;
-    padding: 15px 32px;
     text-align: center;
     font-size: 14px;
     border: 2px solid black;
     box-sizing: border-box;
-    border-radius: 30px;
+    border-radius: 24px;
 
 }
 

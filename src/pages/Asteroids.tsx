@@ -3,6 +3,7 @@ import styles from "./Asteroids.module.css"
 import {AsteroidCard} from "../components/AsteroidCard/AsteroidCard"
 import {useContext, useEffect, useState} from "react";
 import {AsteroidsContext} from "../components/asteroids-context/AsteroidsContext";
+import {getUserKey} from "../utils/getUserKey";
 
 export const Asteroids = () =>{
 
@@ -21,7 +22,7 @@ export const Asteroids = () =>{
 
     useEffect(()=>{
         try{
-            const result =  fetch("https://api.nasa.gov/neo/rest/v1/feed?api_key=wlrs4C3UGJ81aqKY1hbw6IIPrcX3R085Cf5hz3mx").then((res) => {
+            const result =  fetch(`https://api.nasa.gov/neo/rest/v1/feed?api_key=${getUserKey()}`).then((res) => {
                 return  res.json()
             }).then((response)=>{
                 let rawAsteroids = []
@@ -54,7 +55,7 @@ export const Asteroids = () =>{
     const {onlyDangerous,setOnlyDangerous, setDistanceMode} = useContext(AsteroidsContext)
 
     return <div>
-        home
+        <Header/>
         <div className={styles.showDangerousOnly} ><input type="checkbox" value={onlyDangerous as unknown as string} onChange = {()=>setOnlyDangerous(!onlyDangerous)}>
         </input> Показать только опасные
         </div>
@@ -67,11 +68,14 @@ export const Asteroids = () =>{
             дистанциях до луны</button></div>
         <div style={{margin: "80px"}}>
 
-        </div>
-        {onlyDangerous ? asteroids.filter((item)=>item.isDangerous).map((item)=>
+        </div >
+        <div style={{display: "flex", gap: "25px", flexWrap: "wrap"}}>
+            {onlyDangerous ? asteroids.filter((item)=>item.isDangerous).map((item)=>
                 <AsteroidCard key={item.id} {...item} />) : asteroids.map((item)=>
                 <AsteroidCard key={item.id} {...item} />)
-        }
+            }
+        </div>
+
 
     </div>
 }

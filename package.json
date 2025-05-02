@@ -2,6 +2,7 @@
   "name": "armagedon-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://vladeg10.github.io/web",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -11,9 +12,11 @@
     "@types/node": "^22.15.3",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router-dom": "^7.5.2",
+    "react-router": "^7.5.3",
+    "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -21,7 +24,8 @@
     "start": "react-scripts start ",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gn-pages -d build"
   },
   "eslintConfig": {
     "extends": [
