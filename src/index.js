@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {RouterProvider} from "react-router-dom";
+import {RouterProvider, createHashRouter} from "react-router-dom";
 import {Asteroids} from "./pages/Asteroids";
 import {Destroyment} from "./pages/Destroyment";
 import {Asteroid} from "./pages/Asteroid";
 import {AsteroidsContextProvider} from "./components/asteroids-context/AsteroidsContext";
-import {createBrowserRouter, createHashRouter} from "react-router";
+import {createBrowserRouter} from "react-router";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: "/asteroids",
         element: <Asteroids/>,
