@@ -2,7 +2,7 @@
   "name": "armagedon-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://vladeg10.github.io/web",
+  "homepage": "http://vladeg10.github.io/armageddon-app",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -25,7 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gn-pages -d build"
+    "deploy": "gH-pages -b main -d build"
   },
   "eslintConfig": {
     "extends": [
