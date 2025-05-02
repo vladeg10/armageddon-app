@@ -8,9 +8,9 @@ import {Asteroids} from "./pages/Asteroids";
 import {Destroyment} from "./pages/Destroyment";
 import {Asteroid} from "./pages/Asteroid";
 import {AsteroidsContextProvider} from "./components/asteroids-context/AsteroidsContext";
-import {createHashRouter} from "react-router";
+import {createBrowserRouter, createHashRouter} from "react-router";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
     {
         path: "/asteroids",
         element: <Asteroids/>,
