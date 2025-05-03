@@ -2,7 +2,6 @@
   "name": "armagedon-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://vladeg10.github.io/armageddon-app",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",

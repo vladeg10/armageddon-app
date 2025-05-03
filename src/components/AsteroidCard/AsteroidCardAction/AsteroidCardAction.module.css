@@ -26,7 +26,16 @@
     border: 2px solid black;
     box-sizing: border-box;
     border-radius: 24px;
+    cursor: pointer;
 
+}
+.action:hover {
+    outline: 0;
+    background: #224e80;
+}
+.action:hover:active {
+    outline: 0;
+    background: #153250;
 }
 
 .actionText{
